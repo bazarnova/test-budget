@@ -11,3 +11,14 @@
    * Дополнить `/budget/add` возможностью указать ID автора (опциональное поле)
    * В элементах ответа `/budget/year/{year}/stats` выводить ФИО автора, если он указан для записи
    * Добавить в параметры запроса `/budget/year/{year}/stats` опциональный фильтр по ФИО автора и фильтровать по совпадению подстроки игнорируя регистр
+
+ps. //TODO fix
+  flyway.clean() // clean existing tables before migration applying
+Unable to clean schema "public"
+-------------------------------
+SQL State  : 42703
+Error Code : 0
+Message    : ОШИБКА: столбец pg_proc.proisagg не существует
+  Подсказка: Возможно, предполагалась ссылка на столбец "pg_proc.prolang".
+  Позиция: 54
+  (do change Postgress version?)
